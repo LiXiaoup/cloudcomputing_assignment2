@@ -1,0 +1,16 @@
+{
+  "name": "TweetMap",
+  "version": "0.0.1",
+  "author": "xw2355",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "*",
+    "twit": "*",
+    "socket.io": "*",
+    "mysql": "*",
+    "aws-sdk": "*"
+  }
+}

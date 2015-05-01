@@ -1,0 +1,7 @@
+{
+    "TopicArn": "arn:aws:sns:us-east-1:832115489972:sentiment",
+    "QueueUrl1": "https://sqs.us-east-1.amazonaws.com/832115489972/tweet",
+    "QueueUrl2": "https://sqs.us-east-1.amazonaws.com/832115489972/sentiment",
+    "QueueArn1": "arn:aws:sqs:us-east-1:832115489972:tweet",
+    "QueueArn2": "arn:aws:sqs:us-east-1:832115489972:sentiment"
+}
