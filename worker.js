@@ -9,9 +9,9 @@ var express = require('express'),
 
 // configure aws credentials
 var config = new aws.Config({
-  "accessKeyId": "AKIAJGP3K7W2PFEZ645A", 
-  "secretAccessKey": "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", 
-  "region": "us-east-1"
+  "accessKeyId": "", 
+  "secretAccessKey": "", 
+  "region": ""
   //"region": "us-east-1"  need to modify the configure???
 });
 
@@ -20,14 +20,14 @@ var config = new aws.Config({
 var sns = new aws.SNS({
   region: "us-east-1",
   apiVersion: "2015-04-19",
-  "accessKeyId": "AKIAJGP3K7W2PFEZ645A", 
-  "secretAccessKey": "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"
+  "accessKeyId": "", 
+  "secretAccessKey": ""
 });
 var sqs = new aws.SQS({
   region: "us-east-1",
   apiVersion: "2015-04-19",
-  "accessKeyId": "AKIAJGP3K7W2PFEZ645A", 
-  "secretAccessKey": "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"
+  "accessKeyId": "", 
+  "secretAccessKey": ""
 });
 
 var alchemyapi = new AlchemyAPI();
