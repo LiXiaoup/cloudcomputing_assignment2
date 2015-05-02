@@ -17,19 +17,19 @@ var twitter = require('twit'),
 
 //Setup twitter stream api
 var twit = new twitter({
-  consumer_key: 'ejCEHa6IMNxi51zrQTE136wdi',
-  consumer_secret: 'gfWykQNDhbTy3Oswl0s7npWexglTeZvAQqS5zJExkAjURX2q1s',
-  access_token: '391259637-BQfA6SgSl0ELifYdYCLxBODeAPxNOjGs0rVdlkXA',
-  access_token_secret: 'zkq1ca7QQS6aohh1NYXgpl7E2SF33fvcV1QXDF5HYMVta'
+  consumer_key: '',
+  consumer_secret: '',
+  access_token: '',
+  access_token_secret: ''
 }),
 stream = null, topic = null;
 
 // Set up RDS connection
 var mydb = new mysql.createConnection({
-  host     : 'clouda2.cnjryr7wwjlv.us-west-2.rds.amazonaws.com',
-  user     : 'CloudA2',
-  password : 'tweetsentiments',
-  database : 'tweets'
+  host     : '',
+  user     : '',
+  password : '',
+  database : ''
 });
 //connect to specified database
 mydb.connect(function(err){
@@ -39,9 +39,9 @@ mydb.connect(function(err){
 
 // configure aws credentials
 var config = new aws.Config({
-  "accessKeyId": "AKIAJGP3K7W2PFEZ645A", 
-  "secretAccessKey": "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", 
-  "region": "us-east-1"
+  "accessKeyId": "", 
+  "secretAccessKey": "", 
+  "region": ""
   //"region": "us-east-1"  need to modify the configure???
 });
 
